@@ -1,0 +1,249 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #0056b3;
+}
+
+#hero {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.btn-secondary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#destinations {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#destinations h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.destination {
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.destination:hover {
+    transform: translateY(-5px);
+}
+
+.destination img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.destination h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#tours {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#tours h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.tour {
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tour:hover {
+    transform: translateY(-5px);
+}
+
+.tour img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.tour h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+    
+    header h1 {
+        font-size: 28px;
+    }
+    
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    header nav ul li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #hero {
+        padding: 80px 0;
+    }
+    
+    #hero h2 {
+        font-size: 36px;
+    }
+    
+    #hero p {
+        font-size: 18px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+    }
+    
+    #destinations h2,
+    #tours h2,
+    #about h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    .destination,
+    .tour {
+        padding: 20px;
+    }
+    
+    footer p {
+        font-size: 12px;
+    }
+}
